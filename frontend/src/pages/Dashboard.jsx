@@ -114,7 +114,7 @@ export default function Dashboard() {
               <div key={c.id} className="card p-4">
                 <div className="flex flex-wrap items-start justify-between gap-2">
                   <div>
-                    <p className="text-sm font-semibold text-ink">{c.name} <span className="font-normal text-slate-400">· {c.email}</span></p>
+                    <p className="text-sm font-semibold text-ink">{c.name} <span className="font-normal text-slate-400">- {c.email}</span><br /> TEL :  <span className="font-normal text-slate-400"> {c.phone}</span>  </p>
                     <p className="text-xs text-slate-500">{REQUEST_TYPE_LABELS[c.request_type]} · {new Date(c.created_at).toLocaleDateString('fr-FR')}</p>
                   </div>
                   <select
